@@ -28,9 +28,7 @@ while True:
     for word in words:
         for letter in word.find_elements_by_tag_name("letter"):
             totype += letter.get_attribute("innerText")
-            print(totype)
         totype += " "
-        print(totype)
 
     # Begin typing
     typebox = driver.find_element_by_id("wordsInput")
